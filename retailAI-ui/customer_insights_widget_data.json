@@ -1,0 +1,55 @@
+{
+  "widgets": [
+    {
+      "widgetId": "PLACEHOLDER-CUSTOMER-WIDGET-1",
+      "data": {
+        "totalCustomers": 45230,
+        "activeCustomers": 32150,
+        "retentionRate": "71%",
+        "avgLifetimeValue": "$1,250"
+      }
+    },
+    {
+      "widgetId": "PLACEHOLDER-CUSTOMER-WIDGET-2",
+      "data": {
+        "categories": ["Premium", "Regular", "Occasional", "New"],
+        "values": [25, 35, 30, 10]
+      }
+    },
+    {
+      "widgetId": "PLACEHOLDER-CUSTOMER-WIDGET-3",
+      "data": {
+        "rows": [
+          {
+            "segment": "Premium Buyers",
+            "customers": 11308,
+            "avgSpend": "$2,500",
+            "retention": "85%",
+            "growth": "+12%"
+          },
+          {
+            "segment": "Regular Shoppers",
+            "customers": 15831,
+            "avgSpend": "$850",
+            "retention": "72%",
+            "growth": "+8%"
+          },
+          {
+            "segment": "Occasional Buyers",
+            "customers": 13569,
+            "avgSpend": "$320",
+            "retention": "45%",
+            "growth": "+5%"
+          },
+          {
+            "segment": "New Customers",
+            "customers": 4522,
+            "avgSpend": "$180",
+            "retention": "N/A",
+            "growth": "+15%"
+          }
+        ]
+      }
+    }
+  ]
+}

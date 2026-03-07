@@ -1,0 +1,56 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+
+Globals:
+  Function:
+    Timeout: 60
+    MemorySize: 512
+    Environment:
+      Variables:
+        API_GATEWAY_URL: "https://cl8tn1x3vf.execute-api.us-east-1.amazonaws.com/prod"
+        API_GATEWAY_KEY: "your_optional_key"
+        SQL_API_GATEWAY_URL: "https://4y9j3r1rd3.execute-api.us-east-1.amazonaws.com/Prod"
+        APP_AWS_REGION: "us-east-1"
+        DYNAMODB_TABLE_NAME: "dashboards"
+        DYNAMODB_ENDPOINT_URL: ""
+        API_HOST: "0.0.0.0"
+        API_PORT: "8000"
+        CORS_ORIGINS: "http://localhost:5173,http://localhost:3000"
+        ENVIRONMENT: "production"
+        SESSION_TTL_SECONDS: "600"
+        CONTEXT_TURNS: "10"
+        HTTP_TIMEOUT: "120"
+        HTTP_TIMEOUT: "120"
+
+Resources:
+  FastAPIFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: .
+      Handler: app.main.handler
+      Runtime: python3.11
+      Policies:
+        - DynamoDBCrudPolicy:
+            TableName: "*"
+        - Statement:
+          - Effect: Allow
+            Action:
+              - bedrock:*
+              - execute-api:Invoke
+            Resource: "*"
+      Events:
+        Api:
+          Type: Api
+          Properties:
+            Path: /{proxy+}
+            Method: ANY
+        Root:
+          Type: Api
+          Properties:
+            Path: /
+            Method: ANY
+
+Outputs:
+  ApiUrl:
+    Description: "Your Live API URL"
+    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/"

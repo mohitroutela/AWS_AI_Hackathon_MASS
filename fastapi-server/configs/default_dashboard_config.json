@@ -1,0 +1,42 @@
+{
+  "dashboardName": "Overview Dashboard",
+  "dashboardType": "overview-dashboard",
+  "description": "Default overview dashboard with key metrics and trends",
+  "userId": "206ce4a5-3871-4b38-a2a8-9dfb1dae3928",
+  "widgets": [
+    {
+      "widgetType": "summaryCard",
+      "title": "Total Sales",
+      "sqlQuery": "SELECT SUM(sales) AS total_sales FROM retail_db.sales",
+      "position": 0,
+      "refreshInterval": 300
+    },
+    {
+      "widgetType": "chart",
+      "widgetChartType": "line",
+      "title": "Revenue Trend",
+      "sqlQuery": "SELECT year_id, SUM(sales) AS total_sales FROM retail_db.sales GROUP BY year_id ORDER BY year_id",
+      "position": 1,
+      "refreshInterval": 600
+    },
+    {
+      "widgetType": "chart",
+      "widgetChartType": "bar",
+      "title": "Sales by Category",
+      "sqlQuery": "SELECT category, SUM(sales) AS total_sales FROM retail_db.sales GROUP BY category ORDER BY total_sales DESC LIMIT 10",
+      "position": 2,
+      "refreshInterval": 600
+    },
+    {
+      "widgetType": "grid",
+      "title": "Top Products",
+      "sqlQuery": "SELECT product_name, sales, quantity FROM retail_db.sales ORDER BY sales DESC LIMIT 20",
+      "position": 3,
+      "refreshInterval": 900
+    }
+  ],
+  "layout": "grid",
+  "isDefault": true,
+  "isPublic": false,
+  "tags": ["revenue", "sales", "default"]
+}

@@ -1,0 +1,54 @@
+{
+  "widgets": [
+    {
+      "widgetId": "PLACEHOLDER-MARKET-WIDGET-1",
+      "data": {
+        "totalRevenue": 5000000,
+        "marketShare": "15.2%",
+        "growthRate": "+8.5%",
+        "competitorCount": 12
+      }
+    },
+    {
+      "widgetId": "PLACEHOLDER-MARKET-WIDGET-2",
+      "data": {
+        "months": ["Sep", "Oct", "Nov", "Dec", "Jan", "Feb"],
+        "series": [
+          {
+            "name": "Our Market Share",
+            "data": [14.5, 14.8, 15.0, 15.1, 15.2, 15.2]
+          },
+          {
+            "name": "Competitor A",
+            "data": [18.2, 18.0, 17.8, 17.5, 17.3, 17.0]
+          }
+        ]
+      }
+    },
+    {
+      "widgetId": "PLACEHOLDER-MARKET-WIDGET-3",
+      "data": {
+        "rows": [
+          {
+            "trend": "Sustainable Products",
+            "growth": "+25%",
+            "impact": "High",
+            "recommendation": "Expand eco-friendly line"
+          },
+          {
+            "trend": "Online Shopping",
+            "growth": "+18%",
+            "impact": "High",
+            "recommendation": "Enhance digital presence"
+          },
+          {
+            "trend": "Premium Segment",
+            "growth": "+12%",
+            "impact": "Medium",
+            "recommendation": "Introduce luxury items"
+          }
+        ]
+      }
+    }
+  ]
+}

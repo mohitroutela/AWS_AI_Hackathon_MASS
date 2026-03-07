@@ -1,0 +1,27 @@
+{
+  "widgets": [
+    {
+      "widgetId": "9e0a0a6e-a0e6-41cb-a37d-fc3170b0732e",
+      "data": {
+        "totalRevenue": 10234567,
+        "totalProfit": 2876543,
+        "profitMargin": "28%",
+        "growthRateMoM": "12.5%"
+      }
+    },
+    {
+      "widgetId": "b79c0dbc-64e2-45cc-b6d5-66c7c99b3246",
+      "data": {
+        "months": ["Sep", "Oct", "Nov", "Dec", "Jan", "Feb"],
+        "revenue": [1200000, 1350000, 1420000, 1600000, 1750000, 1900000]
+      }
+    },
+    {
+      "widgetId": "f2bbd57e-7840-4ff6-9ce5-0d357990fb00",
+      "data": {
+        "categories": ["Electronics", "Clothing", "Home", "Sports"],
+        "salesDistribution": [40, 25, 20, 15]
+      }
+    }
+  ]
+}

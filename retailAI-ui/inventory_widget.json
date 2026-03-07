@@ -1,0 +1,40 @@
+{
+  "widgets": [
+    {
+      "widgetId": "ae1785d3-0e0e-4538-b064-aa905c131f43",
+      "data": {
+        "lowStockItems": 42,
+        "overstockItems": 18,
+        "outOfStock": 7,
+        "inventoryTurnoverRatio": 5.4
+      }
+    },
+    {
+      "widgetId": "6c9a5cd6-bb28-4905-90da-8393e4397a5c",
+      "data": {
+        "rows": [
+          {
+            "product": "Laptop X",
+            "stock": 5,
+            "avgMonthlySales": 40,
+            "risk": "High"
+          },
+          {
+            "product": "Running Shoes",
+            "stock": 8,
+            "avgMonthlySales": 35,
+            "risk": "High"
+          }
+        ]
+      }
+    },
+    {
+      "widgetId": "9a81ebc2-d9a8-415d-9ee4-3c26fa314bd7",
+      "data": {
+        "months": ["Sep", "Oct", "Nov", "Dec", "Jan", "Feb"],
+        "demand": [200, 220, 250, 280, 300, 330],
+        "stock": [300, 280, 260, 240, 210, 180]
+      }
+    }
+  ]
+}

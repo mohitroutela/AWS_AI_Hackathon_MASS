@@ -1,0 +1,23 @@
+{
+  "widgets": [
+    {
+      "widgetId": "b2438e8c-96c0-42ca-bfb3-45ab2293c19c",
+      "data": {
+        "averageMargin": "32.5%",
+        "totalRevenue": 2450000,
+        "totalProfit": 796250,
+        "profitMargin": "32.5%",
+        "optimalPriceProducts": 145,
+        "underPricedProducts": 23,
+        "overPricedProducts": 12
+      }
+    },
+    {
+      "widgetId": "0eae50d0-c0be-4a75-be04-45c75b34acd4",
+      "data": {
+        "categories": ["Electronics", "Clothing", "Home & Garden", "Sports", "Beauty", "Food & Beverage"],
+        "values": [18, 35, 28, 22, 45, 15]
+      }
+    }
+  ]
+}
